@@ -1,0 +1,126 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-background: #050508;
+  --color-foreground: #f0f0f5;
+  --color-primary: #6366f1;
+  --color-primary-light: #818cf8;
+  --color-surface: #0f0f14;
+  --color-surface-light: #1a1a24;
+  --color-border: #2a2a3a;
+  --color-accent: #22d3ee;
+  --color-success: #34d399;
+  --color-danger: #f87171;
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #2a2a3a transparent;
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-foreground);
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+.glass {
+  background: rgba(15, 15, 20, 0.8);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(99, 102, 241, 0.15);
+}
+
+.convex {
+  background: var(--color-surface);
+  box-shadow: 
+    6px 6px 12px rgba(0, 0, 0, 0.4),
+    -4px -4px 12px rgba(255, 255, 255, 0.03),
+    inset 1px 1px 0px rgba(255, 255, 255, 0.05);
+  border-radius: 24px;
+}
+
+.convex-btn {
+  background: var(--color-surface);
+  box-shadow: 
+    4px 4px 8px rgba(0, 0, 0, 0.5),
+    -2px -2px 8px rgba(255, 255, 255, 0.02);
+  transition: all 0.2s ease;
+}
+
+.convex-btn:active {
+  box-shadow: 
+    inset 4px 4px 8px rgba(0, 0, 0, 0.5),
+    inset -2px -2px 8px rgba(255, 255, 255, 0.02);
+  transform: scale(0.98);
+}
+
+.glass-light {
+  background: rgba(26, 26, 36, 0.6);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(99, 102, 241, 0.1);
+}
+
+.glow {
+  box-shadow: 0 0 40px rgba(99, 102, 241, 0.15), 0 0 80px rgba(99, 102, 241, 0.05);
+}
+
+.glow-accent {
+  box-shadow: 0 0 40px rgba(34, 211, 238, 0.15), 0 0 80px rgba(34, 211, 238, 0.05);
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #6366f1, #22d3ee);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.leaflet-container {
+  background: #0a0a12 !important;
+  border-radius: 0;
+}
+
+.leaflet-tile-pane {
+  filter: none;
+}
+
+.leaflet-control-zoom {
+  border: none !important;
+  border-radius: 12px !important;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0,0,0,.4) !important;
+}
+
+.leaflet-control-zoom a {
+  background: rgba(15, 15, 20, 0.9) !important;
+  color: #f0f0f5 !important;
+  border: 1px solid rgba(99, 102, 241, 0.2) !important;
+}
+
+.leaflet-tooltip {
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+}
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 20px rgba(99, 102, 241, 0.3); }
+  50% { box-shadow: 0 0 40px rgba(99, 102, 241, 0.6); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}

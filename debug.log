@@ -1,0 +1,362 @@
+2026-02-17T16:27:50.426Z [console][warn] [Fast Refresh] rebuilding
+2026-02-17T16:27:50.542Z [console][warn] [Fast Refresh] done in 218ms
+2026-02-17T16:27:50.426Z [console][log] [Fast Refresh] rebuilding
+2026-02-17T16:27:50.542Z [console][log] [Fast Refresh] done in 218ms
+2026-02-17T17:03:20.271Z [console][error] ./src/lib/supabase.ts:1:1
+Module not found: Can't resolve '@supabase/supabase-js'
+> 1 | import { createClient } from '@supabase/supabase-js';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | const supabaseUrl = process.env.SUPABASE_URL!;
+  4 | const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY!;
+
+Import trace:
+  App Route:
+    ./src/lib/supabase.ts
+    ./src/app/api/auth/register/route.ts
+
+https://nextjs.org/docs/messages/module-not-found
+2026-02-18T20:17:22.205Z [network][GET 200] /api/orders
+  response: [{"id":"3b259b0c-9e13-4a0e-b9c3-8ee24bf3ef7f","user_id":"9e2f87d7-51ab-45d0-80b3-20e5e69f8b39","order_type":"private","cargo_name":"Бытовая техника","sender_phone":"+79995555555","city":"Казань","address":"ул. Баумана 15","comment":null,"company_name":null,"company_email":null,"lat":55.7887,"lng":49.1221,"status":"in_progress","driver_id":"5ac7cb05-61ac-45a4-8e79-33c348cf9a1f","created_at":"2026-02-17T16:29:14.213Z","driver":{"id":"5ac7cb05-61ac-45a4-8e79-33c348cf9a1f","user_id":"adbc7f19-888a-446b-812e-42397194aa5d","name":"Ильяс","transport_type":"truck_20t","phone":"987654","city":"вас","lat":null,"lng":null,"is_active":true,"created_at":"2026-02-17T18:00:21.017003+00:00","vehicle_brand":null,"vehicle_model":null,"vehicle_year":null,"vehicle_plate":null,"vehicle_capacity_kg":null,"vehicle_length_m":null,"vehicle_photo_url":null}}]
+2026-02-18T20:17:22.206Z [network][GET 200] /api/drivers
+  response: [{"id":"5068b0e4-d48e-4ced-bdef-8d0b00510cbf","user_id":"9e2f87d7-51ab-45d0-80b3-20e5e69f8b39","name":"Виктор","transport_type":"truck_20t","phone":"+79991234567","city":"Москва","lat":55.7558,"lng":37.6173,"is_active":true,"created_at":"2026-02-17T16:29:03.623Z","vehicle_brand":null,"vehicle_model":null,"vehicle_year":null,"vehicle_plate":null,"vehicle_capacity_kg":null,"vehicle_length_m":null,"vehicle_photo_url":null},{"id":"5ac7cb05-61ac-45a4-8e79-33c348cf9a1f","user_id":"adbc7f19-888a-446b-812e-42397194aa5d","name":"Ильяс","transport_type":"truck_20t","phone":"987654","city":"вас","lat":null,"lng":null,"is_active":true,"created_at":"2026-02-17T18:00:21.017Z","vehicle_brand":null,"vehicle_model":null,"vehicle_year":null,"vehicle_plate":null,"vehicle_capacity_kg":null,"vehicle_length_m":null,"vehicle_photo_url":null}]
+2026-02-18T20:35:34.098Z [network][GET 200] /api/orders
+  response: [{"id":"3b259b0c-9e13-4a0e-b9c3-8ee24bf3ef7f","user_id":"9e2f87d7-51ab-45d0-80b3-20e5e69f8b39","order_type":"private","cargo_name":"Бытовая техника","sender_phone":"+79995555555","city":"Казань","address":"ул. Баумана 15","comment":null,"company_name":null,"company_email":null,"lat":55.7887,"lng":49.1221,"status":"in_progress","driver_id":"5ac7cb05-61ac-45a4-8e79-33c348cf9a1f","created_at":"2026-02-17T16:29:14.213Z","driver":{"id":"5ac7cb05-61ac-45a4-8e79-33c348cf9a1f","user_id":"adbc7f19-888a-446b-812e-42397194aa5d","name":"Ильяс","transport_type":"truck_20t","phone":"987654","city":"вас","lat":null,"lng":null,"is_active":true,"created_at":"2026-02-17T18:00:21.017003+00:00","vehicle_brand":null,"vehicle_model":null,"vehicle_year":null,"vehicle_plate":null,"vehicle_capacity_kg":null,"vehicle_length_m":null,"vehicle_photo_url":null}}]
+2026-02-18T20:35:34.099Z [network][GET 200] /api/drivers
+  response: [{"id":"5068b0e4-d48e-4ced-bdef-8d0b00510cbf","user_id":"9e2f87d7-51ab-45d0-80b3-20e5e69f8b39","name":"Виктор","transport_type":"truck_20t","phone":"+79991234567","city":"Москва","lat":55.7558,"lng":37.6173,"is_active":true,"created_at":"2026-02-17T16:29:03.623Z","vehicle_brand":null,"vehicle_model":null,"vehicle_year":null,"vehicle_plate":null,"vehicle_capacity_kg":null,"vehicle_length_m":null,"vehicle_photo_url":null},{"id":"5ac7cb05-61ac-45a4-8e79-33c348cf9a1f","user_id":"adbc7f19-888a-446b-812e-42397194aa5d","name":"Ильяс","transport_type":"truck_20t","phone":"987654","city":"вас","lat":null,"lng":null,"is_active":true,"created_at":"2026-02-17T18:00:21.017Z","vehicle_brand":null,"vehicle_model":null,"vehicle_year":null,"vehicle_plate":null,"vehicle_capacity_kg":null,"vehicle_length_m":null,"vehicle_photo_url":null}]
+2026-02-18T20:35:44.225Z [network][GET 200] /api/orders
+  response: [{"id":"3b259b0c-9e13-4a0e-b9c3-8ee24bf3ef7f","user_id":"9e2f87d7-51ab-45d0-80b3-20e5e69f8b39","order_type":"private","cargo_name":"Бытовая техника","sender_phone":"+79995555555","city":"Казань","address":"ул. Баумана 15","comment":null,"company_name":null,"company_email":null,"lat":55.7887,"lng":49.1221,"status":"in_progress","driver_id":"5ac7cb05-61ac-45a4-8e79-33c348cf9a1f","created_at":"2026-02-17T16:29:14.213Z","driver":{"id":"5ac7cb05-61ac-45a4-8e79-33c348cf9a1f","user_id":"adbc7f19-888a-446b-812e-42397194aa5d","name":"Ильяс","transport_type":"truck_20t","phone":"987654","city":"вас","lat":null,"lng":null,"is_active":true,"created_at":"2026-02-17T18:00:21.017003+00:00","vehicle_brand":null,"vehicle_model":null,"vehicle_year":null,"vehicle_plate":null,"vehicle_capacity_kg":null,"vehicle_length_m":null,"vehicle_photo_url":null}}]
+2026-02-18T20:35:44.227Z [network][GET 200] /api/drivers
+  response: [{"id":"5068b0e4-d48e-4ced-bdef-8d0b00510cbf","user_id":"9e2f87d7-51ab-45d0-80b3-20e5e69f8b39","name":"Виктор","transport_type":"truck_20t","phone":"+79991234567","city":"Москва","lat":55.7558,"lng":37.6173,"is_active":true,"created_at":"2026-02-17T16:29:03.623Z","vehicle_brand":null,"vehicle_model":null,"vehicle_year":null,"vehicle_plate":null,"vehicle_capacity_kg":null,"vehicle_length_m":null,"vehicle_photo_url":null},{"id":"5ac7cb05-61ac-45a4-8e79-33c348cf9a1f","user_id":"adbc7f19-888a-446b-812e-42397194aa5d","name":"Ильяс","transport_type":"truck_20t","phone":"987654","city":"вас","lat":null,"lng":null,"is_active":true,"created_at":"2026-02-17T18:00:21.017Z","vehicle_brand":null,"vehicle_model":null,"vehicle_year":null,"vehicle_plate":null,"vehicle_capacity_kg":null,"vehicle_length_m":null,"vehicle_photo_url":null}]
+2026-02-18T20:35:54.129Z [network][GET 200] /api/drivers
+  response: [{"id":"5068b0e4-d48e-4ced-bdef-8d0b00510cbf","user_id":"9e2f87d7-51ab-45d0-80b3-20e5e69f8b39","name":"Виктор","transport_type":"truck_20t","phone":"+79991234567","city":"Москва","lat":55.7558,"lng":37.6173,"is_active":true,"created_at":"2026-02-17T16:29:03.623Z","vehicle_brand":null,"vehicle_model":null,"vehicle_year":null,"vehicle_plate":null,"vehicle_capacity_kg":null,"vehicle_length_m":null,"vehicle_photo_url":null},{"id":"5ac7cb05-61ac-45a4-8e79-33c348cf9a1f","user_id":"adbc7f19-888a-446b-812e-42397194aa5d","name":"Ильяс","transport_type":"truck_20t","phone":"987654","city":"вас","lat":null,"lng":null,"is_active":true,"created_at":"2026-02-17T18:00:21.017Z","vehicle_brand":null,"vehicle_model":null,"vehicle_year":null,"vehicle_plate":null,"vehicle_capacity_kg":null,"vehicle_length_m":null,"vehicle_photo_url":null}]
+2026-02-18T20:35:54.131Z [network][GET 200] /api/orders
+  response: [{"id":"3b259b0c-9e13-4a0e-b9c3-8ee24bf3ef7f","user_id":"9e2f87d7-51ab-45d0-80b3-20e5e69f8b39","order_type":"private","cargo_name":"Бытовая техника","sender_phone":"+79995555555","city":"Казань","address":"ул. Баумана 15","comment":null,"company_name":null,"company_email":null,"lat":55.7887,"lng":49.1221,"status":"in_progress","driver_id":"5ac7cb05-61ac-45a4-8e79-33c348cf9a1f","created_at":"2026-02-17T16:29:14.213Z","driver":{"id":"5ac7cb05-61ac-45a4-8e79-33c348cf9a1f","user_id":"adbc7f19-888a-446b-812e-42397194aa5d","name":"Ильяс","transport_type":"truck_20t","phone":"987654","city":"вас","lat":null,"lng":null,"is_active":true,"created_at":"2026-02-17T18:00:21.017003+00:00","vehicle_brand":null,"vehicle_model":null,"vehicle_year":null,"vehicle_plate":null,"vehicle_capacity_kg":null,"vehicle_length_m":null,"vehicle_photo_url":null}}]
+2026-02-18T20:39:06.438Z [network][GET 200] /api/orders
+  response: [{"id":"3b259b0c-9e13-4a0e-b9c3-8ee24bf3ef7f","user_id":"9e2f87d7-51ab-45d0-80b3-20e5e69f8b39","order_type":"private","cargo_name":"Бытовая техника","sender_phone":"+79995555555","city":"Казань","address":"ул. Баумана 15","comment":null,"company_name":null,"company_email":null,"lat":55.7887,"lng":49.1221,"status":"in_progress","driver_id":"5ac7cb05-61ac-45a4-8e79-33c348cf9a1f","created_at":"2026-02-17T16:29:14.213Z","driver":{"id":"5ac7cb05-61ac-45a4-8e79-33c348cf9a1f","user_id":"adbc7f19-888a-446b-812e-42397194aa5d","name":"Ильяс","transport_type":"truck_20t","phone":"987654","city":"вас","lat":null,"lng":null,"is_active":true,"created_at":"2026-02-17T18:00:21.017003+00:00","vehicle_brand":null,"vehicle_model":null,"vehicle_year":null,"vehicle_plate":null,"vehicle_capacity_kg":null,"vehicle_length_m":null,"vehicle_photo_url":null}}]
+2026-02-18T20:39:06.440Z [network][GET 200] /api/drivers
+  response: [{"id":"5068b0e4-d48e-4ced-bdef-8d0b00510cbf","user_id":"9e2f87d7-51ab-45d0-80b3-20e5e69f8b39","name":"Виктор","transport_type":"truck_20t","phone":"+79991234567","city":"Москва","lat":55.7558,"lng":37.6173,"is_active":true,"created_at":"2026-02-17T16:29:03.623Z","vehicle_brand":null,"vehicle_model":null,"vehicle_year":null,"vehicle_plate":null,"vehicle_capacity_kg":null,"vehicle_length_m":null,"vehicle_photo_url":null},{"id":"5ac7cb05-61ac-45a4-8e79-33c348cf9a1f","user_id":"adbc7f19-888a-446b-812e-42397194aa5d","name":"Ильяс","transport_type":"truck_20t","phone":"987654","city":"вас","lat":null,"lng":null,"is_active":true,"created_at":"2026-02-17T18:00:21.017Z","vehicle_brand":null,"vehicle_model":null,"vehicle_year":null,"vehicle_plate":null,"vehicle_capacity_kg":null,"vehicle_length_m":null,"vehicle_photo_url":null}]
+2026-02-18T20:39:16.378Z [network][GET 200] /api/drivers
+  response: [{"id":"5068b0e4-d48e-4ced-bdef-8d0b00510cbf","user_id":"9e2f87d7-51ab-45d0-80b3-20e5e69f8b39","name":"Виктор","transport_type":"truck_20t","phone":"+79991234567","city":"Москва","lat":55.7558,"lng":37.6173,"is_active":true,"created_at":"2026-02-17T16:29:03.623Z","vehicle_brand":null,"vehicle_model":null,"vehicle_year":null,"vehicle_plate":null,"vehicle_capacity_kg":null,"vehicle_length_m":null,"vehicle_photo_url":null},{"id":"5ac7cb05-61ac-45a4-8e79-33c348cf9a1f","user_id":"adbc7f19-888a-446b-812e-42397194aa5d","name":"Ильяс","transport_type":"truck_20t","phone":"987654","city":"вас","lat":null,"lng":null,"is_active":true,"created_at":"2026-02-17T18:00:21.017Z","vehicle_brand":null,"vehicle_model":null,"vehicle_year":null,"vehicle_plate":null,"vehicle_capacity_kg":null,"vehicle_length_m":null,"vehicle_photo_url":null}]
+2026-02-18T20:39:16.380Z [network][GET 200] /api/orders
+  response: [{"id":"3b259b0c-9e13-4a0e-b9c3-8ee24bf3ef7f","user_id":"9e2f87d7-51ab-45d0-80b3-20e5e69f8b39","order_type":"private","cargo_name":"Бытовая техника","sender_phone":"+79995555555","city":"Казань","address":"ул. Баумана 15","comment":null,"company_name":null,"company_email":null,"lat":55.7887,"lng":49.1221,"status":"in_progress","driver_id":"5ac7cb05-61ac-45a4-8e79-33c348cf9a1f","created_at":"2026-02-17T16:29:14.213Z","driver":{"id":"5ac7cb05-61ac-45a4-8e79-33c348cf9a1f","user_id":"adbc7f19-888a-446b-812e-42397194aa5d","name":"Ильяс","transport_type":"truck_20t","phone":"987654","city":"вас","lat":null,"lng":null,"is_active":true,"created_at":"2026-02-17T18:00:21.017003+00:00","vehicle_brand":null,"vehicle_model":null,"vehicle_year":null,"vehicle_plate":null,"vehicle_capacity_kg":null,"vehicle_length_m":null,"vehicle_photo_url":null}}]
+2026-02-18T20:39:26.428Z [network][GET 200] /api/drivers
+  response: [{"id":"5068b0e4-d48e-4ced-bdef-8d0b00510cbf","user_id":"9e2f87d7-51ab-45d0-80b3-20e5e69f8b39","name":"Виктор","transport_type":"truck_20t","phone":"+79991234567","city":"Москва","lat":55.7558,"lng":37.6173,"is_active":true,"created_at":"2026-02-17T16:29:03.623Z","vehicle_brand":null,"vehicle_model":null,"vehicle_year":null,"vehicle_plate":null,"vehicle_capacity_kg":null,"vehicle_length_m":null,"vehicle_photo_url":null},{"id":"5ac7cb05-61ac-45a4-8e79-33c348cf9a1f","user_id":"adbc7f19-888a-446b-812e-42397194aa5d","name":"Ильяс","transport_type":"truck_20t","phone":"987654","city":"вас","lat":null,"lng":null,"is_active":true,"created_at":"2026-02-17T18:00:21.017Z","vehicle_brand":null,"vehicle_model":null,"vehicle_year":null,"vehicle_plate":null,"vehicle_capacity_kg":null,"vehicle_length_m":null,"vehicle_photo_url":null}]
+2026-02-18T20:39:26.431Z [network][GET 200] /api/orders
+  response: [{"id":"3b259b0c-9e13-4a0e-b9c3-8ee24bf3ef7f","user_id":"9e2f87d7-51ab-45d0-80b3-20e5e69f8b39","order_type":"private","cargo_name":"Бытовая техника","sender_phone":"+79995555555","city":"Казань","address":"ул. Баумана 15","comment":null,"company_name":null,"company_email":null,"lat":55.7887,"lng":49.1221,"status":"in_progress","driver_id":"5ac7cb05-61ac-45a4-8e79-33c348cf9a1f","created_at":"2026-02-17T16:29:14.213Z","driver":{"id":"5ac7cb05-61ac-45a4-8e79-33c348cf9a1f","user_id":"adbc7f19-888a-446b-812e-42397194aa5d","name":"Ильяс","transport_type":"truck_20t","phone":"987654","city":"вас","lat":null,"lng":null,"is_active":true,"created_at":"2026-02-17T18:00:21.017003+00:00","vehicle_brand":null,"vehicle_model":null,"vehicle_year":null,"vehicle_plate":null,"vehicle_capacity_kg":null,"vehicle_length_m":null,"vehicle_photo_url":null}}]
+2026-02-18T20:39:36.381Z [network][GET 200] /api/drivers
+  response: [{"id":"5068b0e4-d48e-4ced-bdef-8d0b00510cbf","user_id":"9e2f87d7-51ab-45d0-80b3-20e5e69f8b39","name":"Виктор","transport_type":"truck_20t","phone":"+79991234567","city":"Москва","lat":55.7558,"lng":37.6173,"is_active":true,"created_at":"2026-02-17T16:29:03.623Z","vehicle_brand":null,"vehicle_model":null,"vehicle_year":null,"vehicle_plate":null,"vehicle_capacity_kg":null,"vehicle_length_m":null,"vehicle_photo_url":null},{"id":"5ac7cb05-61ac-45a4-8e79-33c348cf9a1f","user_id":"adbc7f19-888a-446b-812e-42397194aa5d","name":"Ильяс","transport_type":"truck_20t","phone":"987654","city":"вас","lat":null,"lng":null,"is_active":true,"created_at":"2026-02-17T18:00:21.017Z","vehicle_brand":null,"vehicle_model":null,"vehicle_year":null,"vehicle_plate":null,"vehicle_capacity_kg":null,"vehicle_length_m":null,"vehicle_photo_url":null}]
+2026-02-18T20:39:36.382Z [network][GET 200] /api/orders
+  response: [{"id":"3b259b0c-9e13-4a0e-b9c3-8ee24bf3ef7f","user_id":"9e2f87d7-51ab-45d0-80b3-20e5e69f8b39","order_type":"private","cargo_name":"Бытовая техника","sender_phone":"+79995555555","city":"Казань","address":"ул. Баумана 15","comment":null,"company_name":null,"company_email":null,"lat":55.7887,"lng":49.1221,"status":"in_progress","driver_id":"5ac7cb05-61ac-45a4-8e79-33c348cf9a1f","created_at":"2026-02-17T16:29:14.213Z","driver":{"id":"5ac7cb05-61ac-45a4-8e79-33c348cf9a1f","user_id":"adbc7f19-888a-446b-812e-42397194aa5d","name":"Ильяс","transport_type":"truck_20t","phone":"987654","city":"вас","lat":null,"lng":null,"is_active":true,"created_at":"2026-02-17T18:00:21.017003+00:00","vehicle_brand":null,"vehicle_model":null,"vehicle_year":null,"vehicle_plate":null,"vehicle_capacity_kg":null,"vehicle_length_m":null,"vehicle_photo_url":null}}]
+2026-02-18T20:39:46.374Z [network][GET 200] /api/orders
+  response: [{"id":"3b259b0c-9e13-4a0e-b9c3-8ee24bf3ef7f","user_id":"9e2f87d7-51ab-45d0-80b3-20e5e69f8b39","order_type":"private","cargo_name":"Бытовая техника","sender_phone":"+79995555555","city":"Казань","address":"ул. Баумана 15","comment":null,"company_name":null,"company_email":null,"lat":55.7887,"lng":49.1221,"status":"in_progress","driver_id":"5ac7cb05-61ac-45a4-8e79-33c348cf9a1f","created_at":"2026-02-17T16:29:14.213Z","driver":{"id":"5ac7cb05-61ac-45a4-8e79-33c348cf9a1f","user_id":"adbc7f19-888a-446b-812e-42397194aa5d","name":"Ильяс","transport_type":"truck_20t","phone":"987654","city":"вас","lat":null,"lng":null,"is_active":true,"created_at":"2026-02-17T18:00:21.017003+00:00","vehicle_brand":null,"vehicle_model":null,"vehicle_year":null,"vehicle_plate":null,"vehicle_capacity_kg":null,"vehicle_length_m":null,"vehicle_photo_url":null}}]
+2026-02-18T20:39:46.376Z [network][GET 200] /api/drivers
+  response: [{"id":"5068b0e4-d48e-4ced-bdef-8d0b00510cbf","user_id":"9e2f87d7-51ab-45d0-80b3-20e5e69f8b39","name":"Виктор","transport_type":"truck_20t","phone":"+79991234567","city":"Москва","lat":55.7558,"lng":37.6173,"is_active":true,"created_at":"2026-02-17T16:29:03.623Z","vehicle_brand":null,"vehicle_model":null,"vehicle_year":null,"vehicle_plate":null,"vehicle_capacity_kg":null,"vehicle_length_m":null,"vehicle_photo_url":null},{"id":"5ac7cb05-61ac-45a4-8e79-33c348cf9a1f","user_id":"adbc7f19-888a-446b-812e-42397194aa5d","name":"Ильяс","transport_type":"truck_20t","phone":"987654","city":"вас","lat":null,"lng":null,"is_active":true,"created_at":"2026-02-17T18:00:21.017Z","vehicle_brand":null,"vehicle_model":null,"vehicle_year":null,"vehicle_plate":null,"vehicle_capacity_kg":null,"vehicle_length_m":null,"vehicle_photo_url":null}]
+2026-02-18T20:39:56.373Z [network][GET 200] /api/orders
+  response: [{"id":"3b259b0c-9e13-4a0e-b9c3-8ee24bf3ef7f","user_id":"9e2f87d7-51ab-45d0-80b3-20e5e69f8b39","order_type":"private","cargo_name":"Бытовая техника","sender_phone":"+79995555555","city":"Казань","address":"ул. Баумана 15","comment":null,"company_name":null,"company_email":null,"lat":55.7887,"lng":49.1221,"status":"in_progress","driver_id":"5ac7cb05-61ac-45a4-8e79-33c348cf9a1f","created_at":"2026-02-17T16:29:14.213Z","driver":{"id":"5ac7cb05-61ac-45a4-8e79-33c348cf9a1f","user_id":"adbc7f19-888a-446b-812e-42397194aa5d","name":"Ильяс","transport_type":"truck_20t","phone":"987654","city":"вас","lat":null,"lng":null,"is_active":true,"created_at":"2026-02-17T18:00:21.017003+00:00","vehicle_brand":null,"vehicle_model":null,"vehicle_year":null,"vehicle_plate":null,"vehicle_capacity_kg":null,"vehicle_length_m":null,"vehicle_photo_url":null}}]
+2026-02-18T20:39:56.375Z [network][GET 200] /api/drivers
+  response: [{"id":"5068b0e4-d48e-4ced-bdef-8d0b00510cbf","user_id":"9e2f87d7-51ab-45d0-80b3-20e5e69f8b39","name":"Виктор","transport_type":"truck_20t","phone":"+79991234567","city":"Москва","lat":55.7558,"lng":37.6173,"is_active":true,"created_at":"2026-02-17T16:29:03.623Z","vehicle_brand":null,"vehicle_model":null,"vehicle_year":null,"vehicle_plate":null,"vehicle_capacity_kg":null,"vehicle_length_m":null,"vehicle_photo_url":null},{"id":"5ac7cb05-61ac-45a4-8e79-33c348cf9a1f","user_id":"adbc7f19-888a-446b-812e-42397194aa5d","name":"Ильяс","transport_type":"truck_20t","phone":"987654","city":"вас","lat":null,"lng":null,"is_active":true,"created_at":"2026-02-17T18:00:21.017Z","vehicle_brand":null,"vehicle_model":null,"vehicle_year":null,"vehicle_plate":null,"vehicle_capacity_kg":null,"vehicle_length_m":null,"vehicle_photo_url":null}]
+2026-02-18T20:40:06.373Z [network][GET 200] /api/orders
+  response: [{"id":"3b259b0c-9e13-4a0e-b9c3-8ee24bf3ef7f","user_id":"9e2f87d7-51ab-45d0-80b3-20e5e69f8b39","order_type":"private","cargo_name":"Бытовая техника","sender_phone":"+79995555555","city":"Казань","address":"ул. Баумана 15","comment":null,"company_name":null,"company_email":null,"lat":55.7887,"lng":49.1221,"status":"in_progress","driver_id":"5ac7cb05-61ac-45a4-8e79-33c348cf9a1f","created_at":"2026-02-17T16:29:14.213Z","driver":{"id":"5ac7cb05-61ac-45a4-8e79-33c348cf9a1f","user_id":"adbc7f19-888a-446b-812e-42397194aa5d","name":"Ильяс","transport_type":"truck_20t","phone":"987654","city":"вас","lat":null,"lng":null,"is_active":true,"created_at":"2026-02-17T18:00:21.017003+00:00","vehicle_brand":null,"vehicle_model":null,"vehicle_year":null,"vehicle_plate":null,"vehicle_capacity_kg":null,"vehicle_length_m":null,"vehicle_photo_url":null}}]
+2026-02-18T20:40:06.374Z [network][GET 200] /api/drivers
+  response: [{"id":"5068b0e4-d48e-4ced-bdef-8d0b00510cbf","user_id":"9e2f87d7-51ab-45d0-80b3-20e5e69f8b39","name":"Виктор","transport_type":"truck_20t","phone":"+79991234567","city":"Москва","lat":55.7558,"lng":37.6173,"is_active":true,"created_at":"2026-02-17T16:29:03.623Z","vehicle_brand":null,"vehicle_model":null,"vehicle_year":null,"vehicle_plate":null,"vehicle_capacity_kg":null,"vehicle_length_m":null,"vehicle_photo_url":null},{"id":"5ac7cb05-61ac-45a4-8e79-33c348cf9a1f","user_id":"adbc7f19-888a-446b-812e-42397194aa5d","name":"Ильяс","transport_type":"truck_20t","phone":"987654","city":"вас","lat":null,"lng":null,"is_active":true,"created_at":"2026-02-17T18:00:21.017Z","vehicle_brand":null,"vehicle_model":null,"vehicle_year":null,"vehicle_plate":null,"vehicle_capacity_kg":null,"vehicle_length_m":null,"vehicle_photo_url":null}]
+2026-02-18T20:40:16.378Z [network][GET 200] /api/orders
+  response: [{"id":"3b259b0c-9e13-4a0e-b9c3-8ee24bf3ef7f","user_id":"9e2f87d7-51ab-45d0-80b3-20e5e69f8b39","order_type":"private","cargo_name":"Бытовая техника","sender_phone":"+79995555555","city":"Казань","address":"ул. Баумана 15","comment":null,"company_name":null,"company_email":null,"lat":55.7887,"lng":49.1221,"status":"in_progress","driver_id":"5ac7cb05-61ac-45a4-8e79-33c348cf9a1f","created_at":"2026-02-17T16:29:14.213Z","driver":{"id":"5ac7cb05-61ac-45a4-8e79-33c348cf9a1f","user_id":"adbc7f19-888a-446b-812e-42397194aa5d","name":"Ильяс","transport_type":"truck_20t","phone":"987654","city":"вас","lat":null,"lng":null,"is_active":true,"created_at":"2026-02-17T18:00:21.017003+00:00","vehicle_brand":null,"vehicle_model":null,"vehicle_year":null,"vehicle_plate":null,"vehicle_capacity_kg":null,"vehicle_length_m":null,"vehicle_photo_url":null}}]
+2026-02-18T20:40:16.380Z [network][GET 200] /api/drivers
+  response: [{"id":"5068b0e4-d48e-4ced-bdef-8d0b00510cbf","user_id":"9e2f87d7-51ab-45d0-80b3-20e5e69f8b39","name":"Виктор","transport_type":"truck_20t","phone":"+79991234567","city":"Москва","lat":55.7558,"lng":37.6173,"is_active":true,"created_at":"2026-02-17T16:29:03.623Z","vehicle_brand":null,"vehicle_model":null,"vehicle_year":null,"vehicle_plate":null,"vehicle_capacity_kg":null,"vehicle_length_m":null,"vehicle_photo_url":null},{"id":"5ac7cb05-61ac-45a4-8e79-33c348cf9a1f","user_id":"adbc7f19-888a-446b-812e-42397194aa5d","name":"Ильяс","transport_type":"truck_20t","phone":"987654","city":"вас","lat":null,"lng":null,"is_active":true,"created_at":"2026-02-17T18:00:21.017Z","vehicle_brand":null,"vehicle_model":null,"vehicle_year":null,"vehicle_plate":null,"vehicle_capacity_kg":null,"vehicle_length_m":null,"vehicle_photo_url":null}]
+2026-02-18T20:40:26.416Z [network][GET 200] /api/drivers
+  response: [{"id":"5068b0e4-d48e-4ced-bdef-8d0b00510cbf","user_id":"9e2f87d7-51ab-45d0-80b3-20e5e69f8b39","name":"Виктор","transport_type":"truck_20t","phone":"+79991234567","city":"Москва","lat":55.7558,"lng":37.6173,"is_active":true,"created_at":"2026-02-17T16:29:03.623Z","vehicle_brand":null,"vehicle_model":null,"vehicle_year":null,"vehicle_plate":null,"vehicle_capacity_kg":null,"vehicle_length_m":null,"vehicle_photo_url":null},{"id":"5ac7cb05-61ac-45a4-8e79-33c348cf9a1f","user_id":"adbc7f19-888a-446b-812e-42397194aa5d","name":"Ильяс","transport_type":"truck_20t","phone":"987654","city":"вас","lat":null,"lng":null,"is_active":true,"created_at":"2026-02-17T18:00:21.017Z","vehicle_brand":null,"vehicle_model":null,"vehicle_year":null,"vehicle_plate":null,"vehicle_capacity_kg":null,"vehicle_length_m":null,"vehicle_photo_url":null}]
+2026-02-18T20:40:26.419Z [network][GET 200] /api/orders
+  response: [{"id":"3b259b0c-9e13-4a0e-b9c3-8ee24bf3ef7f","user_id":"9e2f87d7-51ab-45d0-80b3-20e5e69f8b39","order_type":"private","cargo_name":"Бытовая техника","sender_phone":"+79995555555","city":"Казань","address":"ул. Баумана 15","comment":null,"company_name":null,"company_email":null,"lat":55.7887,"lng":49.1221,"status":"in_progress","driver_id":"5ac7cb05-61ac-45a4-8e79-33c348cf9a1f","created_at":"2026-02-17T16:29:14.213Z","driver":{"id":"5ac7cb05-61ac-45a4-8e79-33c348cf9a1f","user_id":"adbc7f19-888a-446b-812e-42397194aa5d","name":"Ильяс","transport_type":"truck_20t","phone":"987654","city":"вас","lat":null,"lng":null,"is_active":true,"created_at":"2026-02-17T18:00:21.017003+00:00","vehicle_brand":null,"vehicle_model":null,"vehicle_year":null,"vehicle_plate":null,"vehicle_capacity_kg":null,"vehicle_length_m":null,"vehicle_photo_url":null}}]
+2026-02-18T20:42:14.471Z [network][GET 200] /api/orders
+  response: [{"id":"3b259b0c-9e13-4a0e-b9c3-8ee24bf3ef7f","user_id":"9e2f87d7-51ab-45d0-80b3-20e5e69f8b39","order_type":"private","cargo_name":"Бытовая техника","sender_phone":"+79995555555","city":"Казань","address":"ул. Баумана 15","comment":null,"company_name":null,"company_email":null,"lat":55.7887,"lng":49.1221,"status":"in_progress","driver_id":"5ac7cb05-61ac-45a4-8e79-33c348cf9a1f","created_at":"2026-02-17T16:29:14.213Z","driver":{"id":"5ac7cb05-61ac-45a4-8e79-33c348cf9a1f","user_id":"adbc7f19-888a-446b-812e-42397194aa5d","name":"Ильяс","transport_type":"truck_20t","phone":"987654","city":"вас","lat":null,"lng":null,"is_active":true,"created_at":"2026-02-17T18:00:21.017003+00:00","vehicle_brand":null,"vehicle_model":null,"vehicle_year":null,"vehicle_plate":null,"vehicle_capacity_kg":null,"vehicle_length_m":null,"vehicle_photo_url":null}}]
+2026-02-18T20:42:14.479Z [network][GET 200] /api/drivers
+  response: [{"id":"5068b0e4-d48e-4ced-bdef-8d0b00510cbf","user_id":"9e2f87d7-51ab-45d0-80b3-20e5e69f8b39","name":"Виктор","transport_type":"truck_20t","phone":"+79991234567","city":"Москва","lat":55.7558,"lng":37.6173,"is_active":true,"created_at":"2026-02-17T16:29:03.623Z","vehicle_brand":null,"vehicle_model":null,"vehicle_year":null,"vehicle_plate":null,"vehicle_capacity_kg":null,"vehicle_length_m":null,"vehicle_photo_url":null},{"id":"5ac7cb05-61ac-45a4-8e79-33c348cf9a1f","user_id":"adbc7f19-888a-446b-812e-42397194aa5d","name":"Ильяс","transport_type":"truck_20t","phone":"987654","city":"вас","lat":null,"lng":null,"is_active":true,"created_at":"2026-02-17T18:00:21.017Z","vehicle_brand":null,"vehicle_model":null,"vehicle_year":null,"vehicle_plate":null,"vehicle_capacity_kg":null,"vehicle_length_m":null,"vehicle_photo_url":null}]
+2026-02-18T20:42:24.484Z [network][GET 200] /api/orders
+  response: [{"id":"3b259b0c-9e13-4a0e-b9c3-8ee24bf3ef7f","user_id":"9e2f87d7-51ab-45d0-80b3-20e5e69f8b39","order_type":"private","cargo_name":"Бытовая техника","sender_phone":"+79995555555","city":"Казань","address":"ул. Баумана 15","comment":null,"company_name":null,"company_email":null,"lat":55.7887,"lng":49.1221,"status":"in_progress","driver_id":"5ac7cb05-61ac-45a4-8e79-33c348cf9a1f","created_at":"2026-02-17T16:29:14.213Z","driver":{"id":"5ac7cb05-61ac-45a4-8e79-33c348cf9a1f","user_id":"adbc7f19-888a-446b-812e-42397194aa5d","name":"Ильяс","transport_type":"truck_20t","phone":"987654","city":"вас","lat":null,"lng":null,"is_active":true,"created_at":"2026-02-17T18:00:21.017003+00:00","vehicle_brand":null,"vehicle_model":null,"vehicle_year":null,"vehicle_plate":null,"vehicle_capacity_kg":null,"vehicle_length_m":null,"vehicle_photo_url":null}}]
+2026-02-18T20:42:24.486Z [network][GET 200] /api/drivers
+  response: [{"id":"5068b0e4-d48e-4ced-bdef-8d0b00510cbf","user_id":"9e2f87d7-51ab-45d0-80b3-20e5e69f8b39","name":"Виктор","transport_type":"truck_20t","phone":"+79991234567","city":"Москва","lat":55.7558,"lng":37.6173,"is_active":true,"created_at":"2026-02-17T16:29:03.623Z","vehicle_brand":null,"vehicle_model":null,"vehicle_year":null,"vehicle_plate":null,"vehicle_capacity_kg":null,"vehicle_length_m":null,"vehicle_photo_url":null},{"id":"5ac7cb05-61ac-45a4-8e79-33c348cf9a1f","user_id":"adbc7f19-888a-446b-812e-42397194aa5d","name":"Ильяс","transport_type":"truck_20t","phone":"987654","city":"вас","lat":null,"lng":null,"is_active":true,"created_at":"2026-02-17T18:00:21.017Z","vehicle_brand":null,"vehicle_model":null,"vehicle_year":null,"vehicle_plate":null,"vehicle_capacity_kg":null,"vehicle_length_m":null,"vehicle_photo_url":null}]
+2026-02-18T20:42:34.471Z [network][GET 200] /api/drivers
+  response: [{"id":"5068b0e4-d48e-4ced-bdef-8d0b00510cbf","user_id":"9e2f87d7-51ab-45d0-80b3-20e5e69f8b39","name":"Виктор","transport_type":"truck_20t","phone":"+79991234567","city":"Москва","lat":55.7558,"lng":37.6173,"is_active":true,"created_at":"2026-02-17T16:29:03.623Z","vehicle_brand":null,"vehicle_model":null,"vehicle_year":null,"vehicle_plate":null,"vehicle_capacity_kg":null,"vehicle_length_m":null,"vehicle_photo_url":null},{"id":"5ac7cb05-61ac-45a4-8e79-33c348cf9a1f","user_id":"adbc7f19-888a-446b-812e-42397194aa5d","name":"Ильяс","transport_type":"truck_20t","phone":"987654","city":"вас","lat":null,"lng":null,"is_active":true,"created_at":"2026-02-17T18:00:21.017Z","vehicle_brand":null,"vehicle_model":null,"vehicle_year":null,"vehicle_plate":null,"vehicle_capacity_kg":null,"vehicle_length_m":null,"vehicle_photo_url":null}]
+2026-02-18T20:42:34.474Z [network][GET 200] /api/orders
+  response: [{"id":"3b259b0c-9e13-4a0e-b9c3-8ee24bf3ef7f","user_id":"9e2f87d7-51ab-45d0-80b3-20e5e69f8b39","order_type":"private","cargo_name":"Бытовая техника","sender_phone":"+79995555555","city":"Казань","address":"ул. Баумана 15","comment":null,"company_name":null,"company_email":null,"lat":55.7887,"lng":49.1221,"status":"in_progress","driver_id":"5ac7cb05-61ac-45a4-8e79-33c348cf9a1f","created_at":"2026-02-17T16:29:14.213Z","driver":{"id":"5ac7cb05-61ac-45a4-8e79-33c348cf9a1f","user_id":"adbc7f19-888a-446b-812e-42397194aa5d","name":"Ильяс","transport_type":"truck_20t","phone":"987654","city":"вас","lat":null,"lng":null,"is_active":true,"created_at":"2026-02-17T18:00:21.017003+00:00","vehicle_brand":null,"vehicle_model":null,"vehicle_year":null,"vehicle_plate":null,"vehicle_capacity_kg":null,"vehicle_length_m":null,"vehicle_photo_url":null}}]
+2026-02-18T20:42:44.542Z [network][GET 200] /api/orders
+  response: [{"id":"3b259b0c-9e13-4a0e-b9c3-8ee24bf3ef7f","user_id":"9e2f87d7-51ab-45d0-80b3-20e5e69f8b39","order_type":"private","cargo_name":"Бытовая техника","sender_phone":"+79995555555","city":"Казань","address":"ул. Баумана 15","comment":null,"company_name":null,"company_email":null,"lat":55.7887,"lng":49.1221,"status":"in_progress","driver_id":"5ac7cb05-61ac-45a4-8e79-33c348cf9a1f","created_at":"2026-02-17T16:29:14.213Z","driver":{"id":"5ac7cb05-61ac-45a4-8e79-33c348cf9a1f","user_id":"adbc7f19-888a-446b-812e-42397194aa5d","name":"Ильяс","transport_type":"truck_20t","phone":"987654","city":"вас","lat":null,"lng":null,"is_active":true,"created_at":"2026-02-17T18:00:21.017003+00:00","vehicle_brand":null,"vehicle_model":null,"vehicle_year":null,"vehicle_plate":null,"vehicle_capacity_kg":null,"vehicle_length_m":null,"vehicle_photo_url":null}}]
+2026-02-18T20:42:44.544Z [network][GET 200] /api/drivers
+  response: [{"id":"5068b0e4-d48e-4ced-bdef-8d0b00510cbf","user_id":"9e2f87d7-51ab-45d0-80b3-20e5e69f8b39","name":"Виктор","transport_type":"truck_20t","phone":"+79991234567","city":"Москва","lat":55.7558,"lng":37.6173,"is_active":true,"created_at":"2026-02-17T16:29:03.623Z","vehicle_brand":null,"vehicle_model":null,"vehicle_year":null,"vehicle_plate":null,"vehicle_capacity_kg":null,"vehicle_length_m":null,"vehicle_photo_url":null},{"id":"5ac7cb05-61ac-45a4-8e79-33c348cf9a1f","user_id":"adbc7f19-888a-446b-812e-42397194aa5d","name":"Ильяс","transport_type":"truck_20t","phone":"987654","city":"вас","lat":null,"lng":null,"is_active":true,"created_at":"2026-02-17T18:00:21.017Z","vehicle_brand":null,"vehicle_model":null,"vehicle_year":null,"vehicle_plate":null,"vehicle_capacity_kg":null,"vehicle_length_m":null,"vehicle_photo_url":null}]
+2026-02-18T20:48:40.663Z [network][GET 200] /api/drivers
+  response: [{"id":"5068b0e4-d48e-4ced-bdef-8d0b00510cbf","user_id":"9e2f87d7-51ab-45d0-80b3-20e5e69f8b39","name":"Виктор","transport_type":"truck_20t","phone":"+79991234567","city":"Москва","lat":55.7558,"lng":37.6173,"is_active":true,"created_at":"2026-02-17T16:29:03.623Z","vehicle_brand":null,"vehicle_model":null,"vehicle_year":null,"vehicle_plate":null,"vehicle_capacity_kg":null,"vehicle_length_m":null,"vehicle_photo_url":null},{"id":"5ac7cb05-61ac-45a4-8e79-33c348cf9a1f","user_id":"adbc7f19-888a-446b-812e-42397194aa5d","name":"Ильяс","transport_type":"truck_20t","phone":"987654","city":"вас","lat":null,"lng":null,"is_active":true,"created_at":"2026-02-17T18:00:21.017Z","vehicle_brand":null,"vehicle_model":null,"vehicle_year":null,"vehicle_plate":null,"vehicle_capacity_kg":null,"vehicle_length_m":null,"vehicle_photo_url":null}]
+2026-02-18T20:48:40.664Z [network][GET 200] /api/orders
+  response: [{"id":"3b259b0c-9e13-4a0e-b9c3-8ee24bf3ef7f","user_id":"9e2f87d7-51ab-45d0-80b3-20e5e69f8b39","order_type":"private","cargo_name":"Бытовая техника","sender_phone":"+79995555555","city":"Казань","address":"ул. Баумана 15","comment":null,"company_name":null,"company_email":null,"lat":55.7887,"lng":49.1221,"status":"in_progress","driver_id":"5ac7cb05-61ac-45a4-8e79-33c348cf9a1f","created_at":"2026-02-17T16:29:14.213Z","driver":{"id":"5ac7cb05-61ac-45a4-8e79-33c348cf9a1f","user_id":"adbc7f19-888a-446b-812e-42397194aa5d","name":"Ильяс","transport_type":"truck_20t","phone":"987654","city":"вас","lat":null,"lng":null,"is_active":true,"created_at":"2026-02-17T18:00:21.017003+00:00","vehicle_brand":null,"vehicle_model":null,"vehicle_year":null,"vehicle_plate":null,"vehicle_capacity_kg":null,"vehicle_length_m":null,"vehicle_photo_url":null}}]
+2026-02-18T20:48:50.641Z [network][GET 200] /api/drivers
+  response: [{"id":"5068b0e4-d48e-4ced-bdef-8d0b00510cbf","user_id":"9e2f87d7-51ab-45d0-80b3-20e5e69f8b39","name":"Виктор","transport_type":"truck_20t","phone":"+79991234567","city":"Москва","lat":55.7558,"lng":37.6173,"is_active":true,"created_at":"2026-02-17T16:29:03.623Z","vehicle_brand":null,"vehicle_model":null,"vehicle_year":null,"vehicle_plate":null,"vehicle_capacity_kg":null,"vehicle_length_m":null,"vehicle_photo_url":null},{"id":"5ac7cb05-61ac-45a4-8e79-33c348cf9a1f","user_id":"adbc7f19-888a-446b-812e-42397194aa5d","name":"Ильяс","transport_type":"truck_20t","phone":"987654","city":"вас","lat":null,"lng":null,"is_active":true,"created_at":"2026-02-17T18:00:21.017Z","vehicle_brand":null,"vehicle_model":null,"vehicle_year":null,"vehicle_plate":null,"vehicle_capacity_kg":null,"vehicle_length_m":null,"vehicle_photo_url":null}]
+2026-02-18T20:48:50.641Z [network][GET 200] /api/orders
+  response: [{"id":"3b259b0c-9e13-4a0e-b9c3-8ee24bf3ef7f","user_id":"9e2f87d7-51ab-45d0-80b3-20e5e69f8b39","order_type":"private","cargo_name":"Бытовая техника","sender_phone":"+79995555555","city":"Казань","address":"ул. Баумана 15","comment":null,"company_name":null,"company_email":null,"lat":55.7887,"lng":49.1221,"status":"in_progress","driver_id":"5ac7cb05-61ac-45a4-8e79-33c348cf9a1f","created_at":"2026-02-17T16:29:14.213Z","driver":{"id":"5ac7cb05-61ac-45a4-8e79-33c348cf9a1f","user_id":"adbc7f19-888a-446b-812e-42397194aa5d","name":"Ильяс","transport_type":"truck_20t","phone":"987654","city":"вас","lat":null,"lng":null,"is_active":true,"created_at":"2026-02-17T18:00:21.017003+00:00","vehicle_brand":null,"vehicle_model":null,"vehicle_year":null,"vehicle_plate":null,"vehicle_capacity_kg":null,"vehicle_length_m":null,"vehicle_photo_url":null}}]
+2026-02-18T20:49:00.574Z [network][GET 200] /api/drivers
+  response: [{"id":"5068b0e4-d48e-4ced-bdef-8d0b00510cbf","user_id":"9e2f87d7-51ab-45d0-80b3-20e5e69f8b39","name":"Виктор","transport_type":"truck_20t","phone":"+79991234567","city":"Москва","lat":55.7558,"lng":37.6173,"is_active":true,"created_at":"2026-02-17T16:29:03.623Z","vehicle_brand":null,"vehicle_model":null,"vehicle_year":null,"vehicle_plate":null,"vehicle_capacity_kg":null,"vehicle_length_m":null,"vehicle_photo_url":null},{"id":"5ac7cb05-61ac-45a4-8e79-33c348cf9a1f","user_id":"adbc7f19-888a-446b-812e-42397194aa5d","name":"Ильяс","transport_type":"truck_20t","phone":"987654","city":"вас","lat":null,"lng":null,"is_active":true,"created_at":"2026-02-17T18:00:21.017Z","vehicle_brand":null,"vehicle_model":null,"vehicle_year":null,"vehicle_plate":null,"vehicle_capacity_kg":null,"vehicle_length_m":null,"vehicle_photo_url":null}]
+2026-02-18T20:49:00.575Z [network][GET 200] /api/orders
+  response: [{"id":"3b259b0c-9e13-4a0e-b9c3-8ee24bf3ef7f","user_id":"9e2f87d7-51ab-45d0-80b3-20e5e69f8b39","order_type":"private","cargo_name":"Бытовая техника","sender_phone":"+79995555555","city":"Казань","address":"ул. Баумана 15","comment":null,"company_name":null,"company_email":null,"lat":55.7887,"lng":49.1221,"status":"in_progress","driver_id":"5ac7cb05-61ac-45a4-8e79-33c348cf9a1f","created_at":"2026-02-17T16:29:14.213Z","driver":{"id":"5ac7cb05-61ac-45a4-8e79-33c348cf9a1f","user_id":"adbc7f19-888a-446b-812e-42397194aa5d","name":"Ильяс","transport_type":"truck_20t","phone":"987654","city":"вас","lat":null,"lng":null,"is_active":true,"created_at":"2026-02-17T18:00:21.017003+00:00","vehicle_brand":null,"vehicle_model":null,"vehicle_year":null,"vehicle_plate":null,"vehicle_capacity_kg":null,"vehicle_length_m":null,"vehicle_photo_url":null}}]
+2026-02-18T20:51:21.509Z [console][error] ./src/app/dashboard/order/[id]/page.tsx:5:32
+Module not found: Can't resolve './OrderMap'
+  3 | import dynamic from 'next/dynamic';
+  4 |
+> 5 | const OrderMap = dynamic(() => import('./OrderMap'), { ssr: false });
+    |                                ^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function OrderDetailPage() {
+  8 |   return <OrderMap />;
+
+Import traces:
+  Client Component Browser:
+    ./src/app/dashboard/order/[id]/page.tsx [Client Component Browser]
+    ./src/app/dashboard/order/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/dashboard/order/[id]/page.tsx [Client Component SSR]
+    ./src/app/dashboard/order/[id]/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+2026-02-18T20:51:21.705Z [console][error] ./src/app/dashboard/order/[id]/page.tsx:5:32
+Module not found: Can't resolve './OrderMap'
+  3 | import dynamic from 'next/dynamic';
+  4 |
+> 5 | const OrderMap = dynamic(() => import('./OrderMap'), { ssr: false });
+    |                                ^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function OrderDetailPage() {
+  8 |   return <OrderMap />;
+
+Import traces:
+  Client Component Browser:
+    ./src/app/dashboard/order/[id]/page.tsx [Client Component Browser]
+    ./src/app/dashboard/order/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/dashboard/order/[id]/page.tsx [Client Component SSR]
+    ./src/app/dashboard/order/[id]/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+2026-02-18T20:51:31.497Z [console][error] ./src/app/dashboard/order/[id]/page.tsx:5:32
+Module not found: Can't resolve './OrderMap'
+  3 | import dynamic from 'next/dynamic';
+  4 |
+> 5 | const OrderMap = dynamic(() => import('./OrderMap'), { ssr: false });
+    |                                ^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function OrderDetailPage() {
+  8 |   return <OrderMap />;
+
+Import traces:
+  Client Component Browser:
+    ./src/app/dashboard/order/[id]/page.tsx [Client Component Browser]
+    ./src/app/dashboard/order/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/dashboard/order/[id]/page.tsx [Client Component SSR]
+    ./src/app/dashboard/order/[id]/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+2026-02-18T20:51:41.496Z [console][error] ./src/app/dashboard/order/[id]/page.tsx:5:32
+Module not found: Can't resolve './OrderMap'
+  3 | import dynamic from 'next/dynamic';
+  4 |
+> 5 | const OrderMap = dynamic(() => import('./OrderMap'), { ssr: false });
+    |                                ^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function OrderDetailPage() {
+  8 |   return <OrderMap />;
+
+Import traces:
+  Client Component Browser:
+    ./src/app/dashboard/order/[id]/page.tsx [Client Component Browser]
+    ./src/app/dashboard/order/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/dashboard/order/[id]/page.tsx [Client Component SSR]
+    ./src/app/dashboard/order/[id]/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+2026-02-18T20:51:51.497Z [console][error] ./src/app/dashboard/order/[id]/page.tsx:5:32
+Module not found: Can't resolve './OrderMap'
+  3 | import dynamic from 'next/dynamic';
+  4 |
+> 5 | const OrderMap = dynamic(() => import('./OrderMap'), { ssr: false });
+    |                                ^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function OrderDetailPage() {
+  8 |   return <OrderMap />;
+
+Import traces:
+  Client Component Browser:
+    ./src/app/dashboard/order/[id]/page.tsx [Client Component Browser]
+    ./src/app/dashboard/order/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/dashboard/order/[id]/page.tsx [Client Component SSR]
+    ./src/app/dashboard/order/[id]/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+2026-02-18T20:52:01.495Z [console][error] ./src/app/dashboard/order/[id]/page.tsx:5:32
+Module not found: Can't resolve './OrderMap'
+  3 | import dynamic from 'next/dynamic';
+  4 |
+> 5 | const OrderMap = dynamic(() => import('./OrderMap'), { ssr: false });
+    |                                ^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function OrderDetailPage() {
+  8 |   return <OrderMap />;
+
+Import traces:
+  Client Component Browser:
+    ./src/app/dashboard/order/[id]/page.tsx [Client Component Browser]
+    ./src/app/dashboard/order/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/dashboard/order/[id]/page.tsx [Client Component SSR]
+    ./src/app/dashboard/order/[id]/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+2026-02-18T20:52:11.494Z [console][error] ./src/app/dashboard/order/[id]/page.tsx:5:32
+Module not found: Can't resolve './OrderMap'
+  3 | import dynamic from 'next/dynamic';
+  4 |
+> 5 | const OrderMap = dynamic(() => import('./OrderMap'), { ssr: false });
+    |                                ^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function OrderDetailPage() {
+  8 |   return <OrderMap />;
+
+Import traces:
+  Client Component Browser:
+    ./src/app/dashboard/order/[id]/page.tsx [Client Component Browser]
+    ./src/app/dashboard/order/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/dashboard/order/[id]/page.tsx [Client Component SSR]
+    ./src/app/dashboard/order/[id]/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+2026-02-18T20:52:21.497Z [console][error] ./src/app/dashboard/order/[id]/page.tsx:5:32
+Module not found: Can't resolve './OrderMap'
+  3 | import dynamic from 'next/dynamic';
+  4 |
+> 5 | const OrderMap = dynamic(() => import('./OrderMap'), { ssr: false });
+    |                                ^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function OrderDetailPage() {
+  8 |   return <OrderMap />;
+
+Import traces:
+  Client Component Browser:
+    ./src/app/dashboard/order/[id]/page.tsx [Client Component Browser]
+    ./src/app/dashboard/order/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/dashboard/order/[id]/page.tsx [Client Component SSR]
+    ./src/app/dashboard/order/[id]/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+2026-02-18T20:52:31.495Z [console][error] ./src/app/dashboard/order/[id]/page.tsx:5:32
+Module not found: Can't resolve './OrderMap'
+  3 | import dynamic from 'next/dynamic';
+  4 |
+> 5 | const OrderMap = dynamic(() => import('./OrderMap'), { ssr: false });
+    |                                ^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function OrderDetailPage() {
+  8 |   return <OrderMap />;
+
+Import traces:
+  Client Component Browser:
+    ./src/app/dashboard/order/[id]/page.tsx [Client Component Browser]
+    ./src/app/dashboard/order/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/dashboard/order/[id]/page.tsx [Client Component SSR]
+    ./src/app/dashboard/order/[id]/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+2026-02-18T20:52:41.494Z [console][error] ./src/app/dashboard/order/[id]/page.tsx:5:32
+Module not found: Can't resolve './OrderMap'
+  3 | import dynamic from 'next/dynamic';
+  4 |
+> 5 | const OrderMap = dynamic(() => import('./OrderMap'), { ssr: false });
+    |                                ^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function OrderDetailPage() {
+  8 |   return <OrderMap />;
+
+Import traces:
+  Client Component Browser:
+    ./src/app/dashboard/order/[id]/page.tsx [Client Component Browser]
+    ./src/app/dashboard/order/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/dashboard/order/[id]/page.tsx [Client Component SSR]
+    ./src/app/dashboard/order/[id]/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+2026-02-18T20:53:17.439Z [console][error] ./src/app/dashboard/order/[id]/page.tsx:5:32
+Module not found: Can't resolve './OrderMap'
+  3 | import dynamic from 'next/dynamic';
+  4 |
+> 5 | const OrderMap = dynamic(() => import('./OrderMap'), { ssr: false });
+    |                                ^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function OrderDetailPage() {
+  8 |   return <OrderMap />;
+
+Import traces:
+  Client Component Browser:
+    ./src/app/dashboard/order/[id]/page.tsx [Client Component Browser]
+    ./src/app/dashboard/order/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/dashboard/order/[id]/page.tsx [Client Component SSR]
+    ./src/app/dashboard/order/[id]/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+2026-02-18T20:53:17.632Z [console][error] ./src/app/dashboard/order/[id]/page.tsx:5:32
+Module not found: Can't resolve './OrderMap'
+  3 | import dynamic from 'next/dynamic';
+  4 |
+> 5 | const OrderMap = dynamic(() => import('./OrderMap'), { ssr: false });
+    |                                ^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function OrderDetailPage() {
+  8 |   return <OrderMap />;
+
+Import traces:
+  Client Component Browser:
+    ./src/app/dashboard/order/[id]/page.tsx [Client Component Browser]
+    ./src/app/dashboard/order/[id]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/dashboard/order/[id]/page.tsx [Client Component SSR]
+    ./src/app/dashboard/order/[id]/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+2026-02-22T05:36:49.634Z [console][error] ./src/app/order/page.tsx:363:26
+Parsing ecmascript source code failed
+  361 |                 </motion.button>
+  362 |               </div>
+> 363 |             </motion.div>
+      |                          ^
+> 364 |           ) : (
+      | ^^^^^^^^^^^^^^^
+> 365 |             <motion.div
+      | ^^^^^^^^^^^^^
+  366 |               key="company-form"
+  367 |               initial={{ opacity: 0, x: 30 }}
+  368 |               animate={{ opacity: 1, x: 0 }}
+
+Expected '</', got 'jsx text'
+
+Import traces:
+  Client Component Browser:
+    ./src/app/order/page.tsx [Client Component Browser]
+    ./src/app/order/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/order/page.tsx [Client Component SSR]
+    ./src/app/order/page.tsx [Server Component]

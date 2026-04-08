@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 80" fill="none">
+  <!-- Cab body -->
+  <rect x="20" y="18" width="80" height="42" rx="8" fill="#e2e8f0" stroke="#94a3b8" stroke-width="1.5"/>
+  <!-- Cab roof detail -->
+  <rect x="24" y="14" width="72" height="8" rx="4" fill="#cbd5e1"/>
+  <!-- Windshield -->
+  <rect x="68" y="24" width="26" height="20" rx="4" fill="#38bdf8" opacity="0.7"/>
+  <rect x="68" y="24" width="26" height="20" rx="4" stroke="#0ea5e9" stroke-width="1" fill="none"/>
+  <!-- Side window -->
+  <rect x="40" y="26" width="22" height="16" rx="3" fill="#38bdf8" opacity="0.5"/>
+  <!-- Headlights -->
+  <rect x="96" y="38" width="6" height="8" rx="2" fill="#fbbf24"/>
+  <!-- Bumper -->
+  <rect x="18" y="58" width="86" height="6" rx="3" fill="#64748b"/>
+  <!-- Rear wheel -->
+  <circle cx="38" cy="64" r="10" fill="#1e293b"/>
+  <circle cx="38" cy="64" r="5" fill="#475569"/>
+  <circle cx="38" cy="64" r="2" fill="#94a3b8"/>
+  <!-- Front wheel -->
+  <circle cx="82" cy="64" r="10" fill="#1e293b"/>
+  <circle cx="82" cy="64" r="5" fill="#475569"/>
+  <circle cx="82" cy="64" r="2" fill="#94a3b8"/>
+  <!-- Exhaust pipe -->
+  <rect x="14" y="30" width="4" height="20" rx="2" fill="#475569"/>
+  <!-- Mirror -->
+  <rect x="98" y="28" width="8" height="4" rx="1" fill="#94a3b8"/>
+  <!-- Grill -->
+  <line x1="96" y1="42" x2="100" y2="42" stroke="#475569" stroke-width="1"/>
+  <line x1="96" y1="45" x2="100" y2="45" stroke="#475569" stroke-width="1"/>
+  <line x1="96" y1="48" x2="100" y2="48" stroke="#475569" stroke-width="1"/>
+</svg>

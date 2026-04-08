@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 80" fill="none">
+  <!-- Trailer body -->
+  <rect x="4" y="10" width="110" height="48" rx="4" fill="#3b82f6" stroke="#2563eb" stroke-width="1.5"/>
+  <!-- Trailer side lines -->
+  <line x1="10" y1="22" x2="108" y2="22" stroke="#60a5fa" stroke-width="0.5" opacity="0.5"/>
+  <line x1="10" y1="34" x2="108" y2="34" stroke="#60a5fa" stroke-width="0.5" opacity="0.5"/>
+  <line x1="10" y1="46" x2="108" y2="46" stroke="#60a5fa" stroke-width="0.5" opacity="0.5"/>
+  <!-- Trailer roof highlight -->
+  <rect x="4" y="10" width="110" height="6" rx="3" fill="#60a5fa" opacity="0.4"/>
+  <!-- Trailer rear door -->
+  <rect x="6" y="14" width="4" height="40" rx="1" fill="#2563eb"/>
+  <!-- Trailer wheels (rear tandem) -->
+  <circle cx="30" cy="64" r="9" fill="#1e293b"/>
+  <circle cx="30" cy="64" r="4.5" fill="#475569"/>
+  <circle cx="30" cy="64" r="1.5" fill="#94a3b8"/>
+  <circle cx="52" cy="64" r="9" fill="#1e293b"/>
+  <circle cx="52" cy="64" r="4.5" fill="#475569"/>
+  <circle cx="52" cy="64" r="1.5" fill="#94a3b8"/>
+  <!-- Connector -->
+  <rect x="112" y="32" width="10" height="6" rx="2" fill="#475569"/>
+  <!-- Cab body -->
+  <rect x="120" y="16" width="60" height="42" rx="8" fill="#1e40af" stroke="#1d4ed8" stroke-width="1.5"/>
+  <!-- Cab roof -->
+  <rect x="124" y="12" width="52" height="8" rx="4" fill="#2563eb"/>
+  <!-- Windshield -->
+  <rect x="156" y="22" width="20" height="18" rx="4" fill="#38bdf8" opacity="0.7"/>
+  <rect x="156" y="22" width="20" height="18" rx="4" stroke="#0ea5e9" stroke-width="1" fill="none"/>
+  <!-- Headlights -->
+  <rect x="178" y="36" width="5" height="6" rx="2" fill="#fbbf24"/>
+  <!-- Bumper -->
+  <rect x="118" y="56" width="68" height="5" rx="2.5" fill="#1e3a5f"/>
+  <!-- Cab wheel -->
+  <circle cx="160" cy="64" r="9" fill="#1e293b"/>
+  <circle cx="160" cy="64" r="4.5" fill="#475569"/>
+  <circle cx="160" cy="64" r="1.5" fill="#94a3b8"/>
+  <!-- Mirror -->
+  <rect x="178" y="24" width="7" height="4" rx="1" fill="#94a3b8"/>
+  <!-- Grill -->
+  <line x1="178" y1="40" x2="182" y2="40" stroke="#1e3a5f" stroke-width="1"/>
+  <line x1="178" y1="43" x2="182" y2="43" stroke="#1e3a5f" stroke-width="1"/>
+  <line x1="178" y1="46" x2="182" y2="46" stroke="#1e3a5f" stroke-width="1"/>
+  <!-- Exhaust -->
+  <rect x="118" y="24" width="3" height="16" rx="1.5" fill="#475569"/>
+</svg>
